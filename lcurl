@@ -26,7 +26,7 @@ while [ "${COUNTER}" -le "${MAX_LOOP_COUNT}" ]; do
     --silent \
     --location \
     --output /dev/null \
-    --write-out "%{http_code} | %{time_total}s | ${NOW} | ${COUNTER}/${MAX_LOOP_COUNT} \n" "${URL}"
+    --write-out "%{http_code} | %{time_total}s | ${NOW} | ${COUNTER}/${MAX_LOOP_COUNT}\n" "${URL}"
 
   sleep "${SLEEP_SECONDS}"
 
