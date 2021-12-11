@@ -45,8 +45,8 @@ That will download the latest release. If you want to download the bleeding
 edge version you can replace the *version number* with *main* in the above
 command.
 
-Confirm it works by running `lcurl`. You should be greeted with a help menu
-that shows an example on how to use it.
+Confirm it works by running `lcurl`. You'll be greeted with a help menu that
+shows an example on how to use it.
 
 ## FAQ
 
