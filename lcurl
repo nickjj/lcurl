@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+# Send HTTP requests using curl to a specific URL in a loop.
+
+URL="${1}"
+SLEEP_SECONDS="${2}"
+MAX_LOOP_COUNT="${3:-999999}"
+COUNTER=1
+
+if [ -z "${URL}" ] || [ -z "${SLEEP_SECONDS}" ]; then
+  cat << HELP
+Please include at least the URL and the amount of time to sleep for in seconds:
+
+${0} https://example.com 0.25
+
+You can also add an optional third argument to control how many times it runs:
+
+${0} https://example.com 0.25 5
+HELP
+  exit 1
+fi
+
+while [ "${COUNTER}" -le "${MAX_LOOP_COUNT}" ]; do
+  NOW="$(date +'%FT%H:%M:%S')"
+
+  curl \
+    --silent \
+    --location \
+    --output /dev/null \
+    --write-out "%{http_code} | %{time_total}s | ${NOW} | ${COUNTER}/${MAX_LOOP_COUNT} \n" "${URL}"
+
+  sleep "${SLEEP_SECONDS}"
+
+  ((COUNTER++))
+done
