@@ -52,7 +52,7 @@ shows an example on how to use it.
 
 ### When would you use this script?
 
-This could be useful to help make sure you're able to perform zero down time
+This could be useful to help make sure you're able to perform zero downtime
 deployments of your application. As you roll-out a new version of your app you
 can use this script to hit your site to make sure it always responds back with
 200s.  That's the exact use case of why I created this script but I'm sure
