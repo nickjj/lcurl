@@ -1,4 +1,4 @@
-# What is lcurl? ![CI](https://github.com/nickjj/lcurl/workflows/CI/badge.svg?branch=master)
+# What is lcurl? ![CI](https://github.com/nickjj/lcurl/workflows/CI/badge.svg?branch=main)
 
 It's a Bash script (yep it uses Bash features) that runs a specific curl
 command X number of times in a loop. It will report back the HTTP status code,
