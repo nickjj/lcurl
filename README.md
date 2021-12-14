@@ -24,6 +24,14 @@ Running the above command will produce this output:
 If you omit the max number of times it will run `999999` times by default. The
 URL and delay (in seconds) are required.
 
+## Demo Video
+
+This video covers why I created the script, using it, installing it and how
+it's implemented using a bit of shell scripting.
+
+[![Demo
+Video](https://img.youtube.com/vi/um24VlkkqGo/0.jpg)](https://www.youtube.com/watch?v=um24VlkkqGo)
+
 ## Installation
 
 Since this script uses curl you'll need to have `curl` installed beforehand.
