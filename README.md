@@ -45,7 +45,7 @@ executable and place it somewhere on your system path.
 
 ```sh
 sudo curl \
-  -L https://raw.githubusercontent.com/nickjj/lcurl/0.1.0/lcurl \
+  -L https://raw.githubusercontent.com/nickjj/lcurl/0.1.1/lcurl \
   -o /usr/local/bin/lcurl && sudo chmod +x /usr/local/bin/lcurl
 ```
 
