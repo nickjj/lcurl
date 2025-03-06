@@ -21,8 +21,16 @@ Running the above command will produce this output:
 200 | 0.066179s | 2021-12-11T08:47:01 | 5/5
 ```
 
-If you omit the max number of times it will run `999999` times by default. The
-URL and delay (in seconds) are required.
+If you omit the max number of times it will run `999999` times. The URL and
+delay (in seconds) are required.
+
+You can also combine lcurl with grep to filter out specific responses, such as
+only outputting unexpected errors:
+
+```sh
+# This filters any non-200 response which could be useful to find 502/503/504s.
+lcurl https://example.com 0.25 5 | grep -v "^2"
+```
 
 ## Demo Video
 
