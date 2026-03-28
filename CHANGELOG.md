@@ -9,6 +9,12 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Nothing yet!
 
+## [0.1.2] - 2026-03-28
+
+### Added
+
+- `-v|--version|version` to get the current version
+
 ## [0.1.1] - 2024-07-27
 
 ### Added
@@ -21,6 +27,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Everything!
 
-[Unreleased]: https://github.com/nickjj/lcurl/compare/0.1.1...HEAD
-[0.1.1]: https://github.com/nickjj/lcurl/releases/tag/0.1.1
+[Unreleased]: https://github.com/nickjj/lcurl/compare/0.1.2...HEAD
+[0.1.2]: https://github.com/nickjj/lcurl/compare/0.1.1...0.1.2
+[0.1.1]: https://github.com/nickjj/lcurl/compare/0.1.0...0.1.1
 [0.1.0]: https://github.com/nickjj/lcurl/releases/tag/0.1.0

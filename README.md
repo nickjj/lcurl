@@ -1,4 +1,4 @@
-# What is lcurl? ![CI](https://github.com/nickjj/lcurl/workflows/CI/badge.svg?branch=main)
+# What is lcurl?
 
 It's a Bash script (yep it uses Bash features) that runs a specific curl
 command X number of times in a loop. It will report back the HTTP status code,
@@ -53,7 +53,7 @@ executable and place it somewhere on your system path.
 
 ```sh
 sudo curl \
-  -L https://raw.githubusercontent.com/nickjj/lcurl/0.1.1/lcurl \
+  -L https://raw.githubusercontent.com/nickjj/lcurl/0.1.2/lcurl \
   -o /usr/local/bin/lcurl && sudo chmod +x /usr/local/bin/lcurl
 ```
 
