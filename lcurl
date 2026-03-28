@@ -6,8 +6,13 @@ SLEEP_SECONDS="${2}"
 MAX_LOOP_COUNT="${3:-999999}"
 COUNTER=1
 
+if [[ "${URL}" =~ ^(-v|--version|version)$ ]]; then
+  echo "0.1.1"
+  exit
+fi
+
 if [ -z "${URL}" ] || [ -z "${SLEEP_SECONDS}" ]; then
-  cat << HELP
+  cat <<HELP
 Please include at least the URL and the amount of time to sleep for in seconds:
 
 ${0} https://example.com 0.25
