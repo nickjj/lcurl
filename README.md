@@ -42,6 +42,9 @@ Video](https://img.youtube.com/vi/um24VlkkqGo/0.jpg)](https://www.youtube.com/wa
 
 ## Installation
 
+*If you're using [my dotfiles](https://github.com/nickjj/dotfiles), it comes
+pre-installed by default!*
+
 Since this script uses curl you'll need to have `curl` installed beforehand.
 It's available with most package managers depending on your OS. For example you
 can apt, brew, pacman or yum install curl.
